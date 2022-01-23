@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import apiUsers from "../services/api";
+import apiUsers from "../../services/api";
 import { Container } from "./styles";
 
 const Pages: React.FC = () => {
@@ -31,11 +31,13 @@ const Pages: React.FC = () => {
   }
 
   return (
-    <>
+    <Container>
       <h1>usuario: {user?.login}</h1>
 
       <img src={user?.avatar_url} alt={user.login} width={200} />
-    </>
+
+      <a href="/tempo">Link Tempo</a>
+    </Container>
   );
 };
 
