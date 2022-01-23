@@ -10,7 +10,8 @@ const Pages: React.FC = () => {
     const value = window.location.pathname.substring(1);
 
     try {
-      const { data } = await apiUsers.get(value === "" ? "otaviojneto" : value);
+      // const { data } = await apiUsers.get(value === "" ? "otaviojneto" : value);
+      const { data } = await apiUsers.get("otaviojneto");
 
       setUser(data);
     } catch (error) {
