@@ -1,14 +1,15 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home, Tempo } from "../Pages";
+import { BrowserRouter, Route, Routes as Switch } from "react-router-dom";
+import { Tempo } from "../Pages";
+import Home from "../Pages/Home";
 
-const Rout: React.FC = () => (
+const Routes: React.FC = () => (
   <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Tempo />} />
-      <Route path="/home" element={<Home />} />
-    </Routes>
+    <Switch>
+      <Route path="/" element={<Home />} />
+      <Route path="/tempo" element={<Tempo />} />
+    </Switch>
   </BrowserRouter>
 );
 
-export default Rout;
+export default Routes;
