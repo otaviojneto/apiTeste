@@ -33,9 +33,12 @@ const Pages: React.FC = () => {
 
   return (
     <Container>
-      <h1>usuario: {user?.login}</h1>
+      <div>
 
-      <img src={user?.avatar_url} alt={user.login} width={200} />
+        <h1>usuario: {user?.login}</h1>
+
+        <img src={user?.avatar_url} alt={user.login} width={200} />
+      </div>
 
       <a href="/tempo">Link Tempo</a>
     </Container>

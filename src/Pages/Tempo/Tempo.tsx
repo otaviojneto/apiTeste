@@ -1,24 +1,15 @@
 import React from "react";
-import { useFetch } from "../../hooks";
 
 // import { Container } from './styles';
 
-const Pages: React.FC = () => {
-  const { error, loading, response } = useFetch(
-    "https://api.github.com/users/otaviojneto"
-  );
+const Tempo: React.FC = () => {
 
-  if (loading) {
-    return <h1>Carregando...</h1>;
-  }
 
-  return (
-    <>
-      <h1>@{response?.login}</h1>
-
-      <img src={response?.avatar_url} alt={response?.login} />
-    </>
-  );
+    return (
+        <>
+            <h1>teste</h1>
+        </>
+    );
 };
 
-export default Pages;
+export default Tempo;
