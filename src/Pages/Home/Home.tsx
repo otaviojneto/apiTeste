@@ -11,7 +11,7 @@ const Pages: React.FC = () => {
 
     try {
       // const { data } = await apiUsers.get(value === "" ? "otaviojneto" : value);
-      const { data } = await apiUsers.get("otaviojneto");
+      const { data } = await apiUsers.get("otavio");
 
       setUser(data);
     } catch (error) {
@@ -35,7 +35,7 @@ const Pages: React.FC = () => {
     <Container>
       <div>
 
-        <h1>usuario: {user?.login}</h1>
+        <h1>user: {user?.login}</h1>
 
         <img src={user?.avatar_url} alt={user.login} width={200} />
       </div>

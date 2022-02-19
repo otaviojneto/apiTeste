@@ -7,6 +7,7 @@ export const Container = styled.div`
 
   div {
     margin-bottom: 50px;
+
   }
 
   a {
@@ -23,3 +24,5 @@ export const Container = styled.div`
     }
   }
 `;
+
+
