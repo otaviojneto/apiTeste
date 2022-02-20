@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter, Route, Routes as Switch } from "react-router-dom";
-import { Tempo, Home } from "../Pages";
+import { Country, Home } from "../Pages";
 
 const Routes: React.FC = () => (
   <BrowserRouter>
     <Switch>
       <Route path="/" element={<Home />} />
-      <Route path="/tempo" element={<Tempo />} />
+      <Route path="/country" element={<Country />} />
     </Switch>
   </BrowserRouter>
 );

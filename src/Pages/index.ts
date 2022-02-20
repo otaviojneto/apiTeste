@@ -1,2 +1,2 @@
 export { default as Home } from "./Home";
-export { default as Tempo } from "./Tempo";
+export { default as Country } from "./Country";

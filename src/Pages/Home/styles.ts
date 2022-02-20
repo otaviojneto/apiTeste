@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background: gray;
+  font-family: Arial, Helvetica, sans-serif;
   height: 100%;
   padding: 10px;
 
   div {
     margin-bottom: 50px;
-
   }
 
   a {
@@ -20,7 +20,7 @@ export const Container = styled.div`
     text-decoration: none;
 
     &:hover {
-      opacity: 0.4;
+      color: #d3d3d3;
     }
   }
 `;
